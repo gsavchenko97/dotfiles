@@ -5,7 +5,7 @@ echo ~~~ setting up workplace ~~~
 echo ~~~ install vim ~~~
 sudo apt -y install vim
 echo ~~~ clone Vundle ~~~
-git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/Vundle.vim
+https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 echo ~~~ copy vimrc ~~~
 cp vimrc ~/.vimrc
 echo ~~~ copy colorscheme ~~~
