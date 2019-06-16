@@ -1,7 +1,5 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-unset LESS
-env_default LESS '-R'
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/gsavchenko/.oh-my-zsh"
 
@@ -20,7 +18,7 @@ if [[ $(print -P "%#") =~ "#" ]]; then
 fi
 POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="%{%B%F{black}%K{yellow}%} $user_symbol%{%b%f%k%F{yellow}%} %{%f%}"
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir rbenv vcs)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(user dir rbenv vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history time)
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
@@ -120,3 +118,8 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 echo -e "\033]6;1;bg;red;brightness;18\a"
 echo -e "\033]6;1;bg;green;brightness;26\a"
 echo -e "\033]6;1;bg;blue;brightness;33\a"
+
+unset LESS
+env_default LESS '-R'
+
+echo ~~~ Hello, Gleb! ~~~
