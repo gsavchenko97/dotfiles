@@ -122,4 +122,6 @@ echo -e "\033]6;1;bg;blue;brightness;33\a"
 unset LESS
 env_default LESS '-R'
 
+alias sshdm="ssh dev-savchenko-u18 -t zsh"
+
 echo ~~~ Hello, Gleb! ~~~
