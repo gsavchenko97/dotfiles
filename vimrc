@@ -65,7 +65,7 @@ set list " включить подсветку
 set listchars=tab:.\ ,trail:- " установить символы, которыми будет осуществляться подсветка
 
 " YCM
-let g:ycm_global_ycm_extra_conf = '/Users/gsavchenko/.vim/.ycm_extra_conf.py'
+let g:ycm_global_ycm_extra_conf = '/home/gsavchenko/.vim/.ycm_extra_conf.py'
 map <C-]> :YcmCompleter GoToImprecise<CR>
 
 " Vim colorscheme
