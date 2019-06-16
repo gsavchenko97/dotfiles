@@ -39,6 +39,7 @@ set hlsearch
 set incsearch
 
 set wrap
+set encoding=utf8           " UTF-8 by default
 set linebreak
 set mouse=a
 syntax on
