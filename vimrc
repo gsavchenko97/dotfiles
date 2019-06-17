@@ -51,7 +51,7 @@ set hidden
 set t_Co=256
 set smartindent
 set autoindent
-set shiftwidth=4
+set shiftwidth=2
 set smarttab
 set et
 set cin
