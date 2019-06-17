@@ -19,6 +19,7 @@ Plugin 'a.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'majutsushi/tagbar'
+Plugin 'octol/vim-cpp-enhanced-highlight'
 
 " color schemes
 Plugin 'tomasr/molokai'
