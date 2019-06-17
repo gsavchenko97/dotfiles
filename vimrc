@@ -59,6 +59,7 @@ set number
 set iminsert=0
 set infercase
 set wcm=<TAB>
+set colorcolumn=100
 
 "" Подсвечивать табы и пробелы в конце строки
 set list " включить подсветку
