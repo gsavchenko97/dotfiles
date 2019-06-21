@@ -94,15 +94,10 @@ nmap <F5> :!./%.o<CR>
 imap <F5> <Esc>:!./%.o<CR>
 vmap <F5> <Esc>:!./%.o<CR>
 
-" Compile C
-nmap <F6> :!gcc -std=c99 -o "%.o" -lm  %<CR>
-imap <F6> <Esc>:!gcc -std=c99 -o "%.o" -lm %<CR>
-vmap <F6> <Esc>:!gcc -std=c99 -o "%.o" -lm %<CR>
-
 " Compile C++
-nmap <F7> :!g++ -std=c++14 -o "%.o" %<CR>
-imap <F7> <Esc>:!g++ -std=c++14 -o "%.o" %<CR>
-vmap <F7> <Esc>:!g++ -std=c++14 -o "%.o" %<CR>
+nmap <F6> :!g++ -std=c++14 -o "%.o" %<CR>
+imap <F6> <Esc>:!g++ -std=c++14 -o "%.o" %<CR>
+vmap <F6> <Esc>:!g++ -std=c++14 -o "%.o" %<CR>
 
 nmap <F8> :TagbarToggle<CR>
 
