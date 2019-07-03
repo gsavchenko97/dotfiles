@@ -1,16 +1,16 @@
-# Workplace setup
+Workplace setup
 =================
 
 Workplace setup scripts for Linux and MacOS.
 
-## Linux workplace setup
+Linux workplace setup
 ------------------------
 
 Run Linux setup script from repository root:
 
     bash linux_setup.sh
 
-## MacOS workpalce setup
+MacOS workpalce setup
 -------------------------
 
 At first install brew:
