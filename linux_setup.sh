@@ -52,5 +52,5 @@ sudo apt -y install tree
 echo ~~~ FINISH: Tools group installed ~~~
 
 
-echo ~~~ FINISH ALL INSTALATION ~~~
+echo ~~~ FINISH ALL INSTALLATION ~~~
 echo ~~~ LINUX SETUP FINISHED ~~~
