@@ -1,17 +1,15 @@
 #!/bin/bash
 
-echo ~~~ setting up workplace ~~~
+echo ~~~ MAC OS SETUP ~~~
 
 export HOMEBREW_NO_AUTO_UPDATE=1
 
 echo ~~~ install vim ~~~
 brew install macvim
-echo ~~~ clone Vundle ~~~
-https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+brew unlink vim
+brew link macvim
 echo ~~~ copy vimrc ~~~
-cp vimrc ~/.vimrc
-echo ~~~ copy colorscheme ~~~
-cp -r colors ~/.vim/
+cp macvimrc ~/.vimrc
 export EDITOR=vim
 echo ~~~ OK ~~~
 
@@ -33,6 +31,14 @@ echo ~~~ install tig ~~~
 brew install tig
 echo ~~~ copy gitconfig ~~~
 cp gitconfig ~/.gitconfig
+echo ~~~ clone Vundle ~~~
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+echo ~~~ install ack ~~~
+brew install ack
+echo ~~~ install tree ~~~
+brew install tree
+
 echo ~~~ OK ~~~
 
 echo ~~~ all what you need successfully installed ~~~

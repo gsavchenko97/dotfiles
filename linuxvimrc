@@ -9,22 +9,22 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 
-Plugin 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
-Plugin 'valloric/youcompleteme'
-Plugin 'jiangmiao/auto-pairs'
-Plugin 'tpope/vim-fugitive'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'kien/ctrlp.vim'
-Plugin 'a.vim'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'majutsushi/tagbar'
-Plugin 'octol/vim-cpp-enhanced-highlight'
-
-" color schemes
-Plugin 'tomasr/molokai'
-Plugin 'morhetz/gruvbox'
-
+"Plugin 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
+"Plugin 'valloric/youcompleteme'
+"Plugin 'jiangmiao/auto-pairs'
+"Plugin 'tpope/vim-fugitive'
+"Plugin 'airblade/vim-gitgutter'
+"Plugin 'kien/ctrlp.vim'
+"Plugin 'a.vim'
+"Plugin 'vim-airline/vim-airline'
+"Plugin 'vim-airline/vim-airline-themes'
+"Plugin 'majutsushi/tagbar'
+"Plugin 'octol/vim-cpp-enhanced-highlight'
+"
+"" color schemes
+"Plugin 'tomasr/molokai'
+"Plugin 'morhetz/gruvbox'
+"
 call vundle#end()            " required
 filetype plugin indent on    " required
 
