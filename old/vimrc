@@ -4,29 +4,38 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+call plug#begin('~/.vim/plugged')
 
-Plugin 'VundleVim/Vundle.vim'
+" THE NERDTREE
+" The NERDTree is a file system explorer for the Vim editor.
+" Usage: Ctrl + n
+Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
 
-"Plugin 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
-"Plugin 'valloric/youcompleteme'
-"Plugin 'jiangmiao/auto-pairs'
-"Plugin 'tpope/vim-fugitive'
-"Plugin 'airblade/vim-gitgutter'
-"Plugin 'kien/ctrlp.vim'
-"Plugin 'a.vim'
-"Plugin 'vim-airline/vim-airline'
-"Plugin 'vim-airline/vim-airline-themes'
-"Plugin 'majutsushi/tagbar'
-"Plugin 'octol/vim-cpp-enhanced-highlight'
-"
-"" color schemes
-"Plugin 'tomasr/molokai'
-"Plugin 'morhetz/gruvbox'
-"
-call vundle#end()            " required
-filetype plugin indent on    " required
+" VIM-AIRLINE
+" Lean & mean status/tabline for vim that's light as air.
+Plug 'vim-airline/vim-airline'
+
+" VIM-AIRLINE-THEMES
+" This is the official theme repository for vim-airline.
+Plug 'vim-airline/vim-airline-themes'
+
+" GRUVBOX
+" Designed as a bright theme with pastel 'retro groove' colors and light/dark
+" mode switching in the way of solarized.
+Plug 'morhetz/gruvbox'
+
+" A
+" A few of quick commands to swtich between source files and header files quickly.
+" Usage: :A
+Plug 'vim-scripts/a.vim'
+
+" FUGITIVE.VIM
+" A git wrapper
+" Usage: :G (git st), :Gdiff (git diff)
+Plug 'tpope/vim-fugitive'
+
+call plug#end()
+
 
 "-------------------------------
 " VIM SETTINGS
@@ -63,16 +72,16 @@ set wcm=<TAB>
 set colorcolumn=100
 set completeopt-=preview
 
+" Super fast window movement shortcuts
+nmap <C-j> <C-W>j
+nmap <C-k> <C-W>k
+nmap <C-h> <C-W>h
+nmap <C-l> <C-W>l
+
 "" Подсвечивать табы и пробелы в конце строки
 set list " включить подсветку
 set listchars=tab:.\ ,trail:- " установить символы, которыми будет осуществляться подсветка
 
-" YCM
-let g:ycm_global_ycm_extra_conf = '/home/gsavchenko/.vim/.ycm_extra_conf.py'
-map <C-]> :YcmCompleter GoToImprecise<CR>
-
-" Vim colorscheme
-"let g:molokai_original = 1
 colorscheme gruvbox
 set background=dark
 
