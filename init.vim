@@ -35,7 +35,7 @@ set completeopt-=preview        " turn off completion preview
 
 filetype off                  " required
 set rtp+=~/.config/nvim/bundle/Vundle.vim
-call vundle#begin()
+call vundle#begin("~/.config/nvim/bundle")
 
 Plugin 'VundleVim/Vundle.vim'
 
