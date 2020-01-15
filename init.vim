@@ -116,7 +116,6 @@ let g:airline_theme = 'simple'
 
 map <C-n> :NERDTreeToggle<CR>
 
-map <C-[> :YcmCompleter GoToDeclaration<CR>
 map <C-]> :YcmCompleter GoToDefinition<CR>
 
 map <C-z> :AV <CR>
