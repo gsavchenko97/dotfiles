@@ -5,11 +5,11 @@
 set nocompatible                " no vi compatible
 set number                      " line numbers
 set expandtab                   " in paste mode change tab on spaces and >> <<
-set tabstop=4                   " spaces count for displaying tab
+set tabstop=2                   " spaces count for displaying tab
 set smarttab                    " tabs in the beginnig of the line (enabled by default)
 set autoindent                  " copy indents from previous line (enadled by default)
 set smartindent                 " more smart autoindent
-set shiftwidth=4                " count of spaces for >> and <<
+set shiftwidth=2                " count of spaces for >> and <<
 set t_Co=256                    " colors. usefull for some terminals
 set background=dark             " background style
 set mouse=a                     " supporting mouse
