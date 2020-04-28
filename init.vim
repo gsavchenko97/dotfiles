@@ -48,7 +48,6 @@ Plugin 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
 " YouCompleteMe is a fast, as-you-type, fuzzy-search code completion engine for Vim.
 " Usage:
 "   GoToDefinition - Ctrl + ]
-"   GoToDeclaration - Ctrl + [
 Plugin 'valloric/youcompleteme'
 
 " GRUVBOX
@@ -69,6 +68,11 @@ Plugin 'vim-airline/vim-airline-themes'
 " Usage: :A
 Plugin 'vim-scripts/a.vim'
 
+" VIM-SIGNATURE
+" Vim-signature is a plugin to place, toggle and display marks.
+" Usage: :SignatureToggle
+Plugin 'kshenoy/vim-signature'
+
 " FUGITIVE.VIM
 " A git wrapper
 " Usage: :G (git st), :Gdiff (git diff)
@@ -76,6 +80,7 @@ Plugin 'tpope/vim-fugitive'
 
 " AUTO PAIRS
 " Insert or delete brackets, parens, quotes in pair.
+" Usage: Alt + e
 Plugin 'jiangmiao/auto-pairs'
 
 " ENHANCED HIGHLIGHT
@@ -90,8 +95,6 @@ Plugin 'majutsushi/tagbar'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
-
-
 "---------------------------------------
 " PLUGINS SETTINGS
 "---------------------------------------
