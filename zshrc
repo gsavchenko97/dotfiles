@@ -15,6 +15,8 @@ plugins=(
     zsh-syntax-highlighting
 )
 
+bindkey '^ ' autosuggest-accept
+
 source $ZSH/oh-my-zsh.sh
 
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib/llvm-8/lib
