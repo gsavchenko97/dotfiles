@@ -91,7 +91,7 @@ Plugin 'octol/vim-cpp-enhanced-highlight'
 " Tagbar is a Vim plugin that provides an easy way to browse the tags of the current file
 " and get an overview of its structure.
 " Usage: F8
-Plugin 'majutsushi/tagbar'
+" Plugin 'majutsushi/tagbar'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
