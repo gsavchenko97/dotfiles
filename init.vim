@@ -123,7 +123,7 @@ map <C-]> :YcmCompleter GoToDefinition<CR>
 
 map <C-z> :AV <CR>
 
-nmap <F8> :TagbarToggle<CR>
+" nmap <F8> :TagbarToggle<CR>
 
 
 "---------------------------------------
