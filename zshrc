@@ -15,8 +15,11 @@ plugins=(
 
 bindkey '^ ' autosuggest-accept
 
+alias vim="nvim"
+
+TIMEFMT=$'\nreal\t%E\nuser\t%U\nsys\t%S'
+
 source $ZSH/oh-my-zsh.sh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-alias vim="nvim"
