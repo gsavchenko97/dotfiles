@@ -17,7 +17,7 @@ bindkey '^ ' autosuggest-accept
 
 alias vim="nvim"
 
-TIMEFMT=$'\nreal\t%E\nuser\t%U\nsys\t%S'
+export TIMEFMT=$'\nreal\t%E\nuser\t%U\nsys\t%S'
 
 source $ZSH/oh-my-zsh.sh
 
