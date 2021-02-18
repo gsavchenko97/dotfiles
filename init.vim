@@ -46,9 +46,12 @@ Plugin 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
 
 " YOUCOMPLETEME
 " YouCompleteMe is a fast, as-you-type, fuzzy-search code completion engine for Vim.
-" Usage:
-"   GoToDefinition - Ctrl + ]
+" Usage: GoToDefinition - Ctrl + ]
 Plugin 'valloric/youcompleteme'
+
+" COC
+" Yet another autocompleter
+" Plugin 'neoclide/coc.nvim', {'branch': 'release'}
 
 " GRUVBOX
 " Designed as a bright theme with pastel 'retro groove' colors and light/dark
@@ -91,10 +94,32 @@ Plugin 'octol/vim-cpp-enhanced-highlight'
 " Tagbar is a Vim plugin that provides an easy way to browse the tags of the current file
 " and get an overview of its structure.
 " Usage: F8
-" Plugin 'majutsushi/tagbar'
+Plugin 'majutsushi/tagbar'
+
+" IDENTLINE
+" Show tab-level of code
+" Plugin 'yggdroot/indentline'
+
+" CTRL-P
+" Useful file open plugin
+Plugin 'ctrlpvim/ctrlp.vim'
+
+" VIM-FLOATERM
+" Usage: <Leader> + t
+" (<Leader> == '\')
+Plugin 'voldikss/vim-floaterm'
+
+" DELIMITMATE
+" Alternative option for auto-pairs
+" Plugin 'raimondi/delimitmate'
+
+" ONEDARK THEME
+" Plugin 'joshdick/onedark.vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
+
+
 "---------------------------------------
 " PLUGINS SETTINGS
 "---------------------------------------
@@ -108,9 +133,28 @@ let g:ycm_global_ycm_extra_conf = "~/.config/nvim/ycm_extra_conf.py"
 
 " COLORSCHEME Settings
 colorscheme gruvbox
+" colorscheme onedark
 
 " VIM AIRLINE Settings
 let g:airline_theme = 'simple'
+
+let g:airline_powerline_fonts = 1
+
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
+
+" airline symbols
+let g:airline_symbols.branch = ''
+let g:airline_left_sep = ' '
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ' '
+let g:airline_right_alt_sep = ''
+
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#buffer_nr_show = 1
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
 
 
 "---------------------------------------
@@ -123,7 +167,11 @@ map <C-]> :YcmCompleter GoToDefinition<CR>
 
 map <C-z> :AV <CR>
 
-" nmap <F8> :TagbarToggle<CR>
+nmap <F8> :TagbarToggle<CR>
+
+let g:floaterm_keymap_new = '<Leader>ft'
+let g:floaterm_keymap_toggle = '<Leader>t'
+let g:floaterm_keymap_kill = '<Leader>k'
 
 
 "---------------------------------------
@@ -154,16 +202,6 @@ set pastetoggle=<F3>
 
 " Sort lines
 vmap <F4> :sort i<CR>
-
-" Run C (C++)
-nmap <F5> :!./%.o<CR>
-imap <F5> <Esc>:!./%.o<CR>
-vmap <F5> <Esc>:!./%.o<CR>
-
-" Compile C++
-nmap <F6> :!g++ -std=c++14 -o "%.o" %<CR>
-imap <F6> <Esc>:!g++ -std=c++14 -o "%.o" %<CR>
-vmap <F6> <Esc>:!g++ -std=c++14 -o "%.o" %<CR>
 
 
 "---------------------------------------
