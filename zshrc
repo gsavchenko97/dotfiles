@@ -1,4 +1,4 @@
-export ZSH="/home/gsavchenko/.oh-my-zsh"
+export ZSH="/home/gsav/.oh-my-zsh"
 
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
