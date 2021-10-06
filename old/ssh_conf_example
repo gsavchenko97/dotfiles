@@ -2,3 +2,4 @@ Host calypso
     User glebka97
     IdentityFile ~/.ssh/robot
     HostName %h.search.yandex.net
+    ForwardAgent yes
