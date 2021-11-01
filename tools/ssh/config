@@ -1,0 +1,8 @@
+Host lermontov
+    User glebka97
+    HostName %h.vla.yp-c.yandex.net
+    ForwardAgent yes
+
+Host dwh-hadoop
+    User dwh202136
+    ProxyCommand ssh -o IdentitiesOnly=yes dwh202136@dwh-client.velkerr.ru -W rc1b-dataproc-d-lzm4o9chywpb41wf.mdb.yandexcloud.net:22
