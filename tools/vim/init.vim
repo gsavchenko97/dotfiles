@@ -130,6 +130,7 @@ let g:NERDTreeDirArrowCollapsible = '▾'
 
 " YOUCOMPLETEME Settings
 let g:ycm_global_ycm_extra_conf = "~/.config/nvim/ycm_extra_conf.py"
+let g:ycm_confirm_extra_conf = 0
 
 " COLORSCHEME Settings
 colorscheme gruvbox
@@ -202,6 +203,9 @@ set pastetoggle=<F3>
 
 " Sort lines
 vmap <F4> :sort i<CR>
+
+" Search selected text
+vnoremap // y/\V<C-R>=escape(@",'/\')<CR><CR>
 
 
 "---------------------------------------
