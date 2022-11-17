@@ -14,23 +14,10 @@ plugins=(
 )
 
 # alias for neovim
-alias vim="nvim"
-
-# alias for clang
-alias clang++="clang++-13"
-
-# alias for arcadia usage
-alias arc-mount="arc mount -m $HOME/arcadia -S $HOME/store --object-store $HOME/object-store"
-
-# alias for freeze microphone sound level on ubuntu
-alias mic-sound="while sleep 0.1; do pacmd set-source-volume alsa_input.pci-0000_00_1f.3.analog-stereo 25000; done"
+alias v="nvim"
 
 # setup for time utility
 export TIMEFMT=$'\nreal\t%E\nuser\t%U\nsys\t%S'
-
-# setup for less utility
-export LESS='-R'
-export LESSOPEN='|~/.lessfilter %s'
 
 # setup for fzf utility
 bindkey '^ ' autosuggest-accept
