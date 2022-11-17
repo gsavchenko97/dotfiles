@@ -1,8 +1,6 @@
 [user]
   email = savchenko.gleb.97@gmail.com
   name = Gleb Savchenko
-[merge]
-  tool = vimdiff
 [color]
   ui = true
 [alias]
