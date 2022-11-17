@@ -2,7 +2,6 @@
 
 * alacritty
 * fonts
-* gdb
 * git
 * tmux
 * tmuxp
