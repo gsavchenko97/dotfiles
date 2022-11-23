@@ -1,0 +1,6 @@
+session_name: 1-main
+windows:
+  - window_name: root
+  - window_name: task
+  - window_name: build
+  - window_name: build-asan
