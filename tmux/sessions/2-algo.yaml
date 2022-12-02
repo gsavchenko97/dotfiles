@@ -1,0 +1,8 @@
+session_name: 2-algo
+windows:
+  - window_name: root
+    shell_command_before:
+      - cd ~/repos/shad/algo
+  - window_name: task
+    shell_command_before:
+      - cd ~/repos/shad/algo
