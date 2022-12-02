@@ -1,0 +1,8 @@
+session_name: 2-py
+windows:
+  - window_name: root
+    shell_command_before:
+      - cd ~/repos/shad/py
+  - window_name: task
+    shell_command_before:
+      - cd ~/repos/shad/py
