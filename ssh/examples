@@ -1,0 +1,4 @@
+Host lermontov
+  User glebka97
+  HostName %h.vla.yp-c.yandex.net
+  ForwardAgent yes
