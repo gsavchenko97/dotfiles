@@ -25,6 +25,12 @@ alias grm="git br | fzf | xargs git br -D"
 
 ## add directories to $PATH
 export PATH="$PATH:$HOME/.local/bin"
+export PATH="$PATH:$HOME/.pyenv/bin"
+export PATH="$PATH:/usr/local/go/bin"
+
+# init pyenv
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 
 ## setup for time utility
 export TIMEFMT=$'\nreal\t%E\nuser\t%U\nsys\t%S'
