@@ -8,3 +8,5 @@
   ci = commit
   co = checkout
   st = status
+[advice]
+  addIgnoredFile = false
