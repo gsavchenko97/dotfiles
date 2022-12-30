@@ -1,0 +1,5 @@
+session_name: 0-main
+windows:
+  - window_name: cmus
+  - window_name: gtd-life
+  - window_name: gtd-work
