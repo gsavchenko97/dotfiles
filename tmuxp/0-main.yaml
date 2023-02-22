@@ -3,3 +3,4 @@ windows:
   - window_name: cmus
   - window_name: gtd-life
   - window_name: gtd-work
+  - window_name: vocabulary
