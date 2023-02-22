@@ -18,7 +18,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 ## aliases
-alias v="nvim"
+alias v="nvim -u ~/repos/neovim-config-minimal/init.lua"
 alias c='xclip -selection clipboard'
 alias gco="git br | fzf | xargs git co"
 alias grm="git br | fzf | xargs git br -D"
