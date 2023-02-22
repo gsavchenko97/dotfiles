@@ -1,6 +1,11 @@
 window:
-  startup_mode: Maximized
+  # startup_mode: Fullscreen
+  # startup_mode: Maximized
   decorations: None
+  dimensions:
+    columns: 200
+    lines: 45
+  opacity: 0.9
 
 font:
   normal:
