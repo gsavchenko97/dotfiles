@@ -1,7 +1,7 @@
 # User configuration
 ## aliases
 alias v="nvim"
-alias vim="nvim -u ~/setup/config-minimal/init.lua"
+alias vim="nvim -u ~/setup/neovim-config-minimal/init.lua"
 alias c='xclip -selection clipboard'
 alias gco="git br | fzf | xargs git co"
 alias grm="git br | fzf | xargs git br -D"
@@ -70,8 +70,8 @@ complete -W "algo1 algo2 cpp1 cpp2 concurrency os dist rust go py" doc
 
 
 ## add directories to $PATH
-# export PATH="$PATH:$HOME/.local/bin"
-# export PATH="$PATH:$HOME/.pyenv/bin"
+export PATH="$PATH:$HOME/.local/bin"
+export PATH="$PATH:$HOME/.pyenv/bin"
 # export PATH="$PATH:/usr/local/go/bin"
 # export PATH="$PATH:$HOME/.local/go/bin"
 # . "$HOME/.cargo/env"
