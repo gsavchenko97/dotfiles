@@ -31,10 +31,13 @@ doc() {
     py)
       v $HOME/txt/study/courses/python.md
       ;;
+    books)
+      v $HOME/txt/study/books.md
+      ;;
     *)
       echo "doc: unknown key '$1'"
       return 1
       ;;
   esac
 }
-complete -W "algo1 algo2 cpp1 cpp2 concurrency os dist rust go py" doc
+complete -W "books algo1 algo2 cpp1 cpp2 concurrency os dist rust go py" doc
