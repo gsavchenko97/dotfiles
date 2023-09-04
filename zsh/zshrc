@@ -13,4 +13,8 @@ bindkey '^ ' autosuggest-accept
 
 source "$ZSH/oh-my-zsh.sh"
 
-source "$HOME/.config/helpers/helpers.sh"
+BASH_PLUGINS="$HOME/.config/bash_plugins"
+source "$BASH_PLUGINS/aliases.sh"
+source "$BASH_PLUGINS/doc.sh"
+source "$BASH_PLUGINS/qcd.sh"
+source "$BASH_PLUGINS/exports.sh"
