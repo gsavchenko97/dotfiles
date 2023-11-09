@@ -1,4 +1,4 @@
 session_name: 1-code
 windows:
-  - window_name: root
+  - window_name: code
   - window_name: code
