@@ -2,9 +2,9 @@
 ## add directories to $PATH
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:$HOME/.pyenv/bin"
-# export PATH="$PATH:/usr/local/go/bin"
-# export PATH="$PATH:$HOME/.local/go/bin"
-# . "$HOME/.cargo/env"
+export PATH="$PATH:/usr/local/go/bin"
+export PATH="$PATH:$HOME/.local/go/bin"
+. "$HOME/.cargo/env"
 
 # init pyenv
 # eval "$(pyenv init -)"
