@@ -34,10 +34,16 @@ doc() {
     books)
       v $HOME/txt/study/books.md
       ;;
+    health)
+      v -O $HOME/txt/health/diary.md $HOME/txt/health/bp.md
+      ;;
+    mental)
+      v $HOME/txt/health/mental.md
+      ;;
     *)
       echo "doc: unknown key '$1'"
       return 1
       ;;
   esac
 }
-complete -W "books algo1 algo2 cpp1 cpp2 concurrency os dist rust go py" doc
+complete -W "health mental books algo1 algo2 cpp1 cpp2 concurrency os dist rust go py" doc

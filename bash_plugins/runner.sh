@@ -1,0 +1,72 @@
+runner() {
+    declare -A hashmap
+    hashmap["bin-pow"]="test_binpow"
+    hashmap["calculator"]="test_calculator"
+    hashmap["cow-vector"]="test_cow_vector"
+    hashmap["decoder"]="test_decoder"
+    hashmap["dedup"]="test_dedup"
+    hashmap["deque"]="test_deque"
+    hashmap["diff-pairs"]="test_diff_pairs"
+    hashmap["dungeon"]="test_dungeon"
+    hashmap["entrance"]="test_entrance"
+    hashmap["factorization"]="test_factorization"
+    hashmap["filter-even"]="test_filter_even"
+    hashmap["find-last"]="test_find_last"
+    hashmap["fold"]="test_fold"
+    hashmap["functors"]="test_functors"
+    hashmap["itertools"]="test_itertools"
+    hashmap["list"]="test_list"
+    hashmap["local-max"]="test_local_max"
+    hashmap["long-sum"]="test_long_sum"
+    hashmap["lru-cache"]="test_lru_cache"
+    hashmap["matrix"]="test_matrix"
+    hashmap["multiplication"]="test_multiplication"
+    hashmap["partition"]="test_partition"
+    hashmap["permutations"]="test_permutations"
+    hashmap["polish-notation"]="test_polish_notation"
+    hashmap["pt-triangle"]="test_pt_triangle"
+    hashmap["quadratic"]="test_quadratic"
+    hashmap["range"]="test_range"
+    hashmap["raytracer"]="test_raytracer"
+    hashmap["raytracer-b2"]="test_raytracer_b2"
+    hashmap["raytracer-debug"]="test_raytracer_debug"
+    hashmap["raytracer-geom"]="test_raytracer_geom"
+    hashmap["raytracer-reader"]="test_raytracer_reader"
+    hashmap["reader"]="test_reader"
+    hashmap["reverse-map"]="test_reverse_map"
+    hashmap["ring-buffer"]="test_ring_buffer"
+    hashmap["rotate"]="test_rotate"
+    hashmap["scheme"]="test_scheme"
+    hashmap["scheme-parser"]="test_scheme_parser"
+    hashmap["scheme-tokenizer"]="test_scheme_tokenizer"
+    hashmap["smart-ptr"]="test_smart_ptr"
+    hashmap["sort-students"]="test_sort_students"
+    hashmap["split"]="test_split"
+    hashmap["stack"]="test_stack"
+    hashmap["static-map"]="test_static_map"
+    hashmap["string-view"]="test_string_view"
+    hashmap["swap-sort"]="test_swap_sort"
+    hashmap["unique"]="test_unique"
+    hashmap["vector"]="test_vector"
+    hashmap["war"]="test_war"
+    hashmap["word-count"]="test_word_count"
+
+    # echo $1
+    # echo "${hashmap[\"$1\"]}"
+    task_name="$1"
+    test_name="${hashmap[\"$task_name\"]}"
+    RED='\033[0;35m'
+    NC='\033[0m'
+    pushd $HOME/repos/cpp0/build
+    echo "${RED}==== BUILD ====${NC}"
+    make "$test_name"
+    echo
+    echo "${RED}==== TESTS ====${NC}"
+    ./"$test_name"
+    echo
+    echo "${RED}==== LINTER ====${NC}"
+    ../run_linter.sh "$task_name"
+    echo
+    popd
+}
+complete -W "bin-pow calculator cow-vector decoder dedup deque diff-pairs dungeon entrance factorization filter-even find-last fold functors itertools list local-max long-sum lru-cache matrix multiplication partition permutations polish-notation pt-triangle quadratic range raytracer raytracer-b2 raytracer-debug raytracer-geom raytracer-reader reader reverse-map ring-buffer rotate scheme scheme-parser scheme-tokenizer smart-ptr sort-students split stack static-map string-view swap-sort unique vector war word-count" runner

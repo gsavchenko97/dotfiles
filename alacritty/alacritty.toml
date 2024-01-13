@@ -18,13 +18,9 @@ style = "Regular"
 # style = "Bold Italic"
 
 [window]
-# startup_mode = "Fullscreen"
-# startup_mode: "Maximized"
+startup_mode = "Maximized"
 decorations = "None"
 opacity = 0.9
-[window.dimensions]
-columns = 200
-lines = 45
 
 # Colors (Dracula)
 # Default colors

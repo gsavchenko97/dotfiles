@@ -1,14 +1,14 @@
 # Quick cd tool
 qcd() {
   case "$1" in
-    df)
+    dotfiles)
       cd $HOME/setup/dotfiles
       ;;
-    apps)
-      cd $HOME/txt/dev/installation/apps
+    installation)
+      cd $HOME/txt/dev/installation
       ;;
     cpp)
-      cd $HOME/shad/cpp0
+      cd $HOME/repos/cpp0
       ;;
     *)
       echo "qcd: unknown key '$1'"
@@ -17,4 +17,4 @@ qcd() {
   esac
   pwd
 }
-complete -W "apps df cpp" qcd
+complete -W "installation dotfiles cpp" qcd
