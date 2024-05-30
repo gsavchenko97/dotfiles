@@ -1,11 +1,15 @@
 # Exports
-## add directories to $PATH
 export PATH="$PATH:$HOME/.local/bin"
-export PATH="$PATH:$HOME/.pyenv/bin"
+
+## Golang
 export PATH="$PATH:/usr/local/go/bin"
 export PATH="$PATH:$HOME/.local/go/bin"
+
+## Rust
 . "$HOME/.cargo/env"
 
+## Python
+export PATH="$PATH:$HOME/.pyenv/bin"
 # init pyenv
 # eval "$(pyenv init -)"
 # eval "$(pyenv virtualenv-init -)"
