@@ -4,11 +4,17 @@ qcd() {
     dotfiles)
       cd $HOME/setup/dotfiles
       ;;
-    installation)
-      cd $HOME/txt/dev/installation
+    install)
+      cd $HOME/txt/install/ubuntu24_04
       ;;
     cpp)
-      cd $HOME/repos/cpp0
+      cd $HOME/repos/cpp1
+      ;;
+    junk)
+      cd $HOME/repos/junk
+      ;;
+    nvim-development)
+      cd $HOME/.config/nvim-development
       ;;
     *)
       echo "qcd: unknown key '$1'"
@@ -17,4 +23,4 @@ qcd() {
   esac
   pwd
 }
-complete -W "installation dotfiles cpp" qcd
+complete -W "install dotfiles cpp junk nvim-development" qcd
