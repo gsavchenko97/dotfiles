@@ -4,6 +4,8 @@ export PATH="$PATH:$HOME/.local/bin"
 ## Golang
 export PATH="$PATH:/usr/local/go/bin"
 export PATH="$PATH:$HOME/.local/go/bin"
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
 
 ## Rust
 . "$HOME/.cargo/env"

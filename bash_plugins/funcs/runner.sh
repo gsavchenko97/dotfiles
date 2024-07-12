@@ -57,7 +57,7 @@ runner() {
     test_name="${hashmap[\"$task_name\"]}"
     RED='\033[0;35m'
     NC='\033[0m'
-    pushd $HOME/repos/cpp0/build
+    pushd $HOME/repos/cpp1/build
     echo "${RED}==== BUILD ====${NC}"
     make "$test_name"
     echo
