@@ -1,4 +1,10 @@
 session_name: 0-main
 windows:
   - window_name: gtd
+    # panes:
+    #   - shell_command:
+    #     - vim -S ~/gtd/life/s.vim
   - window_name: cmus
+    # panes:
+    #   - shell_command:
+    #     - cmus
